@@ -184,6 +184,14 @@ section.success {
     background: #18bc9c;
 }
 
+section.success h3 {
+  color: #FAF69D
+}
+
+section.success p, section.success ul li, section.success strong {
+  color: #000;
+}
+
 @media(max-width:767px) {
     section {
         padding: 75px 0;
@@ -194,6 +202,7 @@ section.success {
     }
 }
 
+/*
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -240,6 +249,7 @@ section.success {
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
     margin: 0;
 }
+*/
 
 #portfolio * {
     z-index: 2;
