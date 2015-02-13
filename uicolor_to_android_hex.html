@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cody Caughlan</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="js/app.js"></script>
+</head>
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand" href="/index.html#page-top">Cody Caughlan</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="/index.html#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/index.html#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/index.html#portfolio">Projects</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+        <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+              <br /><br />
+                <div class="col-lg-12">
+                    <h2>UIColor to [Android] Hex Converter</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10">
+                  <p>Recently I worked on a project porting an iOS app to Android.</p>
+                  <p>In iOS you create colors using the <code>UIColor</code> class, with calls like:</p>
+                  <code>
+                    [UIColor colorWithRed:0.3 green:0.85 blue:0.41 alpha:0.75];
+                  </code>
+                  <p>In Android you must specify colors via hex. So the task is to convert iOS <code>UIColor</code>
+                    calls to hex.</p>
+
+                    <input type="text" name="uicolor" id="uicolor" style="width:60%" placeholder="Paste in the UIColor code" />
+                    <button id="generate">Generate</button>
+                    <br />
+                  <div id="output-container" style="display:none">
+                    <h2>Output:</h2>
+                    <div style="margin:40px 0;font-size:140%">0x<span id="hex1"></span></div>
+                    - or, can also be specified as -
+                    <div style="margin:40px 0;font-size:140%">#<span id="hex2"></span></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>San Francisco, CA.</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="http://stackoverflow.com/users/25398/cody-caughlan" class="btn-social btn-outline"><i class="fa fa-fw fa-stack-overflow"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/ruckus" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.linkedin.com/in/codycaughlan" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Fun &amp; Games</h3>
+                        <div id="joke">
+                        </div>
+                        <small id="joke-text"></small>
+                        <p> .... </p>
+                        <small id="joke-punchline"></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; CodyCaughlan.com 2014
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+</body>
+
+</html>
