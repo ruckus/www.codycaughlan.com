@@ -20,6 +20,7 @@ var uiColor = function() {
   var input = document.getElementById('uicolor');
   var hex1 = document.getElementById('hex1');
   var hex2 = document.getElementById('hex2');
+  var swatch = document.getElementById('swatch');
   var outputContainer = document.getElementById('output-container');
 
   var letters = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -56,7 +57,6 @@ var uiColor = function() {
   var colorWithWhite = function(method) {
     var output = [];
     var matches = method.match(/colorWithWhite:(\d?\.?\d*)\s+alpha:(\d?\.?\d*)/);
-    console.log(matches);
     if(typeof(matches) == 'object') {
       var white = Math.round(255 * parseFloat(matches[1]));
       var alpha = Math.round(255 * parseFloat(matches[2]));
@@ -84,18 +84,20 @@ var uiColor = function() {
   button.onclick = function() {
     var value = input.value;
     var out;
-    console.log('wtf: %s', value);
+    //console.log('wtf: %s', value);
     if(value.match(/colorWithRed/)) {
       out = colorWithRed(value);
       hex1.innerHTML = out;
       hex2.innerHTML = out;
       outputContainer.style.display = 'block';
+      swatch.style.backgroundColor = '#' + out.substr(2, out.length);
     }
     if(value.match(/colorWithWhite/)) {
       out = colorWithWhite(value);
       hex1.innerHTML = out;
       hex2.innerHTML = out;
       outputContainer.style.display = 'block';
+      swatch.style.backgroundColor = '#' + out.substr(2, out.length);
     }
 
     return false;
